@@ -7,9 +7,19 @@ function App() {
       <div className="inner-box">
         <div className="main-box">
           <Sidebar />
+          <input type="checkbox" id="toggler" />
           <div className="main-board">
             <nav className="top-navbar">
               <div className="search-wrapper">
+                <label htmlFor="toggler">
+                  <FontAwesomeIcon
+                    icon={["fas", "bars"]}
+                    color="#333"
+                    style={{
+                      marginRight: "12px",
+                    }}
+                  />
+                </label>
                 <FontAwesomeIcon
                   icon={["fas", "search"]}
                   color="#ddd"
@@ -149,10 +159,40 @@ function App() {
                       <td> name Your </td>
                       <td>
                         {" "}
+                        <button className="table-btn"> active </button>{" "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> name Your </td>
+                      <td> name Your </td>
+                      <td> name Your </td>
+                      <td> name Your </td>
+                      <td>
+                        {" "}
+                        <button className="table-btn"> active </button>{" "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> name Your </td>
+                      <td> name Your </td>
+                      <td> name Your </td>
+                      <td> name Your </td>
+                      <td>
+                        {" "}
                         <button className="table-btn warn">
                           {" "}
                           active{" "}
                         </button>{" "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> name Your </td>
+                      <td> name Your </td>
+                      <td> name Your </td>
+                      <td> name Your </td>
+                      <td>
+                        {" "}
+                        <button className="table-btn"> active </button>{" "}
                       </td>
                     </tr>
                   </tbody>
