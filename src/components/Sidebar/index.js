@@ -15,7 +15,8 @@ const Sidebar = () => {
         <img
           className="user-image"
           alt="A user profile"
-          src="https://picsum.photos/200/300"
+          // src="https://picsum.photos/200/300"
+          src="https://images.unsplash.com/photo-1515848797093-effe16ccfabb"
         />
         <div className="user-info">
           <p className="username">Angelina Doe</p>

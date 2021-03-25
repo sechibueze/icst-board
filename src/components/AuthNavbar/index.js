@@ -30,7 +30,7 @@ const AuthNavbar = () => {
           <img
             className="user-image"
             alt="A user profile"
-            src="https://picsum.photos/200/300"
+            src="https://images.unsplash.com/photo-1515848797093-effe16ccfabb"
             style={{
               width: "40px",
               height: "40px",
