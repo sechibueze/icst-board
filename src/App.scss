@@ -22,61 +22,29 @@ body {
   font-weight: bolder;
   width: 100%;
 }
-// Sidebard
-.sidebar {
-  //   position: fixed;
-  width: 17rem;
-  height: 100%;
+
+// Sidebard toggler
+#toggler {
+  color: red;
+  display: none;
+  user-select: none;
+}
+// #toggler:checked ~ span,
+#toggler:checked ~ #sidebar {
+  display: block;
+  position: fixed;
+  background: blanchedalmond;
   top: 0;
   left: 0;
-  padding: 0rem 1rem;
+}
+
+.hamburger {
+  display: none;
   @media screen and (max-width: 700px) {
-    display: none;
+    display: flex;
+    cursor: pointer;
+    margin-right: 0.5rem;
   }
-}
-
-.navbar {
-  padding: 1rem 0;
-  text-align: center;
-}
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.user-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-}
-
-.user-info .user-name {
-  font-weight: 900;
-  font-size: 1.1rem;
-}
-
-.sidebar-menu {
-  display: block;
-  margin: 0.8rem auto;
-}
-.sidebar-menu li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-}
-
-.sidebar-menu li .btn {
-  background-color: $blue;
-  width: 100%;
-  color: $white;
-  font-weight: bolder;
-  padding: 0.6rem 0rem;
-  border: 0;
 }
 
 // ::-webkit-meter-even-less-good-value
@@ -108,12 +76,20 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  .username {
+    @media screen and (max-width: 700px) {
+      font-size: 0.6rem;
+    }
+  }
 }
-// .search-wrapper {
-//   @media screen and (max-width: 700px) {
-//     display: none;
-//   }
-// }
+.search-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
 .search-box {
   outline: 0;
   color: #ddd;

@@ -1,10 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./Sidebar.scss";
 const Sidebar = () => {
   return (
-    <sidebar className="sidebar">
+    <sidebar className="sidebar" id="sidebar">
+      <label htmlFor="toggler" className="sidebar-close-btn">
+        <FontAwesomeIcon icon={["fas", "times"]} color="#ddd" />
+      </label>
       <div className="navbar">
         <div className="logo-wrapper">
-          <h3> Blue box </h3>
+          <h3 className="logo-text"> Blue box </h3>
         </div>
       </div>
       <header className="header">
@@ -22,9 +26,9 @@ const Sidebar = () => {
       <ul className="sidebar-menu">
         <li>
           <p className="menu-text"> Dashboard </p>
-          <span className="menu-icon far fa-bar">
+          <span className="menu-icon">
             {" "}
-            <FontAwesomeIcon icon={["fas", "bars"]} />{" "}
+            <FontAwesomeIcon icon={["fas", "dashboard"]} />{" "}
           </span>
         </li>
         <li>

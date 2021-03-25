@@ -6,27 +6,31 @@ function App() {
     <div className="main">
       <div className="inner-box">
         <div className="main-box">
+          <input type="checkbox" id="toggler" name="toggler" />
+          {/* <span> hello </span> */}
           <Sidebar />
-          <input type="checkbox" id="toggler" />
           <div className="main-board">
             <nav className="top-navbar">
-              <div className="search-wrapper">
-                <label htmlFor="toggler">
-                  <FontAwesomeIcon
-                    icon={["fas", "bars"]}
-                    color="#333"
-                    style={{
-                      marginRight: "12px",
-                    }}
-                  />
-                </label>
+              <label htmlFor="toggler" className="hamburger">
                 <FontAwesomeIcon
-                  icon={["fas", "search"]}
-                  color="#ddd"
+                  icon={["fas", "bars"]}
+                  color="#333"
+                  size="2x"
                   style={{
                     marginRight: "12px",
                   }}
                 />
+              </label>
+              <div className="search-wrapper">
+                <span>
+                  <FontAwesomeIcon
+                    icon={["fas", "search"]}
+                    color="#ddd"
+                    style={{
+                      marginRight: "12px",
+                    }}
+                  />
+                </span>
                 <input
                   type="text"
                   className="search-box"
@@ -47,7 +51,7 @@ function App() {
                       height: "40px",
                     }}
                   />
-                  <p> Angelina Doe</p>
+                  <p className="username"> Angelina Doe</p>
                 </div>
                 <div className="navbar-icons">
                   <span>
@@ -129,7 +133,7 @@ function App() {
               </div>
 
               <div className="table-wrapper">
-                <p className="table-title"> Standar table design</p>
+                <p className="table-title"> Standard table design</p>
 
                 <table className="table">
                   <thead>

@@ -1,0 +1,73 @@
+@import "../../App.scss";
+// Sidebard
+.sidebar {
+  //   position: fixed;
+  width: 17rem;
+  height: 100%;
+  padding: 0rem 1rem;
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+.sidebar-close-btn {
+  display: none;
+  @media screen and (max-width: 700px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.3rem;
+    background-color: rgb(56, 39, 39);
+    color: azure;
+    border-radius: 0.2rem;
+  }
+}
+.navbar {
+  padding: 1rem 0;
+  text-align: center;
+}
+.logo-text {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.user-info .username {
+  font-weight: 900;
+  font-size: 1rem;
+}
+.user-info small {
+  font-size: 0.8rem;
+}
+.sidebar-menu {
+  display: block;
+  margin: 0.8rem auto;
+}
+.sidebar-menu li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.sidebar-menu li .btn {
+  background-color: $blue;
+  width: 100%;
+  color: $white;
+  font-weight: bolder;
+  padding: 0.6rem 0rem;
+  border: 0;
+}
