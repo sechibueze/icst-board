@@ -28,28 +28,28 @@ const Sidebar = () => {
           <p className="menu-text"> Dashboard </p>
           <span className="menu-icon">
             {" "}
-            <FontAwesomeIcon icon={["fas", "dashboard"]} />{" "}
+            <FontAwesomeIcon icon={["fas", "bug"]} color="#ccc" />{" "}
           </span>
         </li>
         <li>
           <p className="menu-text"> Components </p>
           <span className="menu-icon far fa-bar">
             {" "}
-            <FontAwesomeIcon icon={["fas", "bars"]} />{" "}
+            <FontAwesomeIcon icon={["fas", "code"]} color="#ccc" />{" "}
           </span>
         </li>
         <li>
           <p className="menu-text"> Data table </p>
           <span className="menu-icon far fa-bar">
             {" "}
-            <FontAwesomeIcon icon={["fas", "bars"]} />{" "}
+            <FontAwesomeIcon icon={["fas", "bars"]} color="#ccc" />{" "}
           </span>
         </li>
         <li>
           <p className="menu-text"> UI elements </p>
-          <span className="menu-icon far fa-bar">
+          <span className="menu-icon">
             {" "}
-            <FontAwesomeIcon icon={["fas", "bars"]} />{" "}
+            <FontAwesomeIcon icon={["fas", "coffee"]} color="#ccc" />{" "}
           </span>
         </li>
         <li>

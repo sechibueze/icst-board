@@ -1,4 +1,5 @@
 import Sidebar from "./components/Sidebar";
+import AuthNavbar from "./components/AuthNavbar";
 import "./App.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function App() {
@@ -10,80 +11,18 @@ function App() {
           {/* <span> hello </span> */}
           <Sidebar />
           <div className="main-board">
-            <nav className="top-navbar">
-              <label htmlFor="toggler" className="hamburger">
-                <FontAwesomeIcon
-                  icon={["fas", "bars"]}
-                  color="#333"
-                  size="2x"
-                  style={{
-                    marginRight: "12px",
-                  }}
-                />
-              </label>
-              <div className="search-wrapper">
-                <span>
-                  <FontAwesomeIcon
-                    icon={["fas", "search"]}
-                    color="#ddd"
-                    style={{
-                      marginRight: "12px",
-                    }}
-                  />
-                </span>
-                <input
-                  type="text"
-                  className="search-box"
-                  placeholder="Search"
-                />
-              </div>
-              <div className="nav-right">
-                <div
-                  className="navbar-user-wrapper"
-                  style={{ marginRight: "10px" }}
-                >
-                  <img
-                    className="user-image"
-                    alt="A user profile"
-                    src="https://picsum.photos/200/300"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                    }}
-                  />
-                  <p className="username"> Angelina Doe</p>
-                </div>
-                <div className="navbar-icons">
-                  <span>
-                    <FontAwesomeIcon
-                      icon={["fas", "search"]}
-                      color="#ddd"
-                      style={{ marginRight: "10px" }}
-                    />
-                  </span>
-                  <span>
-                    <FontAwesomeIcon
-                      icon={["fas", "search"]}
-                      color="#ddd"
-                      style={{ marginRight: "10px" }}
-                    />
-                  </span>
-                  <span>
-                    <FontAwesomeIcon
-                      icon={["fas", "search"]}
-                      color="#ddd"
-                      style={{ marginRight: "10px" }}
-                    />
-                  </span>
-                </div>
-              </div>
-            </nav>
+            <AuthNavbar />
             <div className="main-dash">
               <div className="">
                 <FontAwesomeIcon
-                  icon={["fas", "search"]}
-                  color="#ddd"
-                  style={{ marginRight: "10px" }}
+                  icon={["fas", "terminal"]}
+                  color="blue"
+                  style={{
+                    marginRight: "10px",
+                    // backgroundColor: "blue",
+                    // color: "#ddd",
+                    // padding: ".4rem",
+                  }}
                 />
                 <span className=""> Dashboard </span>
               </div>
@@ -91,7 +30,7 @@ function App() {
                 <div className="card">
                   <span className="card-icon">
                     <FontAwesomeIcon
-                      icon={["fas", "search"]}
+                      icon={["fas", "qrcode"]}
                       color="#ddd"
                       style={{ marginRight: "10px" }}
                     />
@@ -105,7 +44,7 @@ function App() {
                 <div className="card">
                   <span className="card-icon">
                     <FontAwesomeIcon
-                      icon={["fas", "search"]}
+                      icon={["fas", "shield-alt"]}
                       color="#ddd"
                       style={{ marginRight: "10px" }}
                     />
@@ -119,7 +58,7 @@ function App() {
                 <div className="card">
                   <span className="card-icon">
                     <FontAwesomeIcon
-                      icon={["fas", "search"]}
+                      icon={["fas", "microphone"]}
                       color="#ddd"
                       style={{ marginRight: "10px" }}
                     />
