@@ -1,0 +1,35 @@
+@import "../../App.scss";
+
+// table
+.table-wrapper {
+  margin: 1rem 0;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+.table-title {
+  margin-bottom: 0.6rem;
+  font-weight: bolder;
+}
+
+.table,
+tbody,
+thead {
+  width: 100%;
+  font-size: 0.7rem;
+}
+th,
+td {
+  padding: 0.5rem 0.8px;
+  text-align: left;
+}
+.table-btn {
+  background-color: $blue;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.6rem;
+  border: none;
+  &.warn {
+    background-color: green;
+  }
+}
